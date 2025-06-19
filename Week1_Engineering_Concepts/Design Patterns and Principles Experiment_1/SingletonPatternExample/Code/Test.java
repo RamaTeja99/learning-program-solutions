@@ -7,3 +7,4 @@ public class Test {
     //If true it means same objects are created using singleton pattern else if false it means different objects are created
   }
 }
+ 
