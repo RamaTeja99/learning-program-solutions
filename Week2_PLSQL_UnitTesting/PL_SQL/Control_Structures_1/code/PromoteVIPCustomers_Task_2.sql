@@ -1,0 +1,13 @@
+DELIMITER //
+
+CREATE PROCEDURE PromoteVIPCustomers()
+BEGIN
+  UPDATE customers
+  SET IsVIP = TRUE
+  WHERE balance > 10000;
+END;
+//
+
+DELIMITER ;
+SET SQL_SAFE_UPDATES = 0;
+CALL PromoteVIPCustomers();
